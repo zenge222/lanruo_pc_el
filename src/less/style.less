@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+p,
+span,
+input,
+textarea {
+    font-weight: normal;
+    margin: 0;
+    font-family: PingFangSC-Semibold, PingFang SC;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+// 1vw = 1920/100 = 19.2px 因为vw会把宽度分为100份
+// 100/19.2 每100px是多少vw (约等于)5.21（vw）
+// 设根字体html为5.21vw，1rem = 100px
+// 100px = 100vw / 7.5 = 1rem
+// 1rem = 13.33vw  = 100px  
+html {
+    font-size: 100/19.2vw;
+    height: 100%;
+}
+
+body {
+    // background: red;
+    height: 100%;
+    line-height: 1;
+    font-size: 0.24rem;
+}
+
+ul,
+li,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.home {
+    .banner_container {
+        img {
+            width: 1920px;
+        }
+
+        .el-carousel__indicators--horizontal {
+            bottom: 20px;
+        }
+
+        .el-carousel__button {
+            width: 20px;
+            height: 6px;
+            background: rgba(255, 255, 255, .5);
+            border-radius: 4px;
+        }
+
+        .el-carousel__arrow {
+            background: transparent;
+            border: 2px solid #fff;
+            width: 64px;
+            height: 64px;
+            font-size: 20px;
+        }
+
+        .is-active {
+            .el-carousel__button {
+                width: 45px;
+                background: #fff;
+            }
+        }
+    }
+}
+
+.offer_courses,
+.partners_carousel {
+    .el-carousel__indicators--horizontal {
+        bottom: 0px;
+    }
+
+    .el-carousel__button {
+        width: 20px;
+        height: 6px;
+        background: rgba(221, 221, 221, 1);
+        border-radius: 5px;
+    }
+
+    .el-carousel__arrow {
+        transition: background linear 0.3s;
+        background: #7f1770;
+        width: 58px;
+        height: 58px;
+        font-size: 18px;
+    }
+
+    .is-active {
+        .el-carousel__button {
+            width: 40px;
+            height: 5px;
+            background: #7f1770;
+        }
+    }
+
+    .el-carousel__arrow:hover {
+        background: rgba(127, 23, 112, 0.7)
+    }
+}
+
+.gm-scrollbar.-vertical {
+    background-color: #f0f0f0
+}
+
+/* horizontal scrollbar track */
+.gm-scrollbar.-horizontal {
+    background-color: transparent;
+}
+
+/* scrollbar thumb */
+.gm-scrollbar .thumb {
+    background-color: rebeccapurple;
+}
+
+.gm-scrollbar .thumb:hover {
+    background-color: fuchsia;
+}
+
+
+
+// .has_header {
+//     padding-top: 84px;
+// }
+
+// .banner_items {
+//     .el-carousel__indicators {
+//         display: none;
+//     }
+
+//     .el-carousel__arrow {
+//         width: 46px;
+//         height: 46px;
+//         font-size: 20px;
+//     }
+// }
+// .title_group {
+//     text-align: center;
+//     line-height: 1;
+
+//     >h3 {
+//         font-size: 45px;
+//         font-weight: 100;
+//         padding-bottom: 20px;
+//     }
+
+//     >p {
+//         font-size: 28px;
+//     }
+
+//     >.line {
+//         width: 43px;
+//         height: 2px;
+//         background: #7E1770;
+//         margin: 28px auto 0 auto;
+//     }
+// }
+
+// .about_us_container,
+// .training_project_container,
+// .nstructor_container,
+// .school_container {
+//     padding-top: 70px;
+
+//     .title_group {
+//         padding-bottom: 60px;
+
+//     }
+
+//     .us_intr_item {
+//         padding-bottom: 60px;
+//         text-align: center;
+//         max-width: 1200px;
+//         margin: 0 auto;
+//         line-height: 32px;
+
+//         >h3 {
+//             font-size: 18px;
+//             color: #7E1770;
+//         }
+
+//         >P {
+//             font-size: 18px;
+//         }
+//     }
+// }
+.swiper-button-prev,
+.swiper-button-next {
+    color: #fff;
+    background: #5e5f5e;
+}
+
+// .video2 {
+//     width: 700px;
+//     height: 405px;
+//     // position: absolute;
+//     // left: 50%;
+//     // top: 49%;
+//     // transform: translate(-50%, -50%);
+
+//     .vjs-big-play-button {
+//         // background: red;
+//         position: absolute;
+//         left: 50%;
+//         top: 50%;
+//         transform: translate(-50%, -50%);
+//         // border-radius: 100%;
+//         // padding: 100px;
+//         // width: 100px;
+//         // height: 100px;
+//     }
+
+//     .vjs_video_3 {
+//         border-radius: 500px;
+//     }
+// }
+
+
+// .enterprise_video {
+//     .video_box {
+//         margin: 0 auto;
+//         position: relative;
+
+//         >img {
+//             width: 1188px;
+//             display: block;
+//             margin: 0 auto;
+//         }
+
+//         .video {
+//             position: absolute;
+//             left: 50%;
+//             top: 46%;
+//             transform: translate(-50%, -50%);
+//         }
+
+//         .video2 {
+//             width: 700px;
+//             height: 405px;
+//             position: absolute;
+//             left: 50%;
+//             top: 49%;
+//             transform: translate(-50%, -50%);
+
+//             .vjs-big-play-button {
+//                 // background: red;
+//                 position: absolute;
+//                 left: 50%;
+//                 top: 50%;
+//                 transform: translate(-50%, -50%);
+//                 // border-radius: 100%;
+//                 // padding: 100px;
+//                 // width: 100px;
+//                 // height: 100px;
+//             }
+
+//             .vjs_video_3 {
+//                 border-radius: 500px;
+//             }
+//         }
+//     }
+// }
